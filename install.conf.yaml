@@ -1,0 +1,46 @@
+- defaults:
+    link:
+    create: true
+    relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zprofile:
+        path: zprofile
+        create: false
+        relink: false
+        force: false
+    ~/.zshrc:
+        path: zshrc
+        create: false
+        relink: false
+        force: false
+    ~/.p10k.zsh:
+        path: p10k.zsh
+        create: false
+        relink: false
+        force: false
+    ~/.gitconfig:
+        path: gitconfig
+        create: false
+        relink: false
+        force: false
+    ~/.gitignore_global:
+        path: gitignore_global
+        create: false
+        relink: false
+        force: false
+
+
+
+- shell:
+- [git submodule update --init --recursive, Installing submodules]
+- clean: ['~']
+
+- link:
+- clean: ['~']
+
+- link:
+
+

@@ -1,0 +1,9 @@
+{
+    "default_project_location": "~/Desktop/portfolio/git_repo",
+    "initial_working_directory": "~",
+    "highlight_selected_line": true,
+    "editor_theme": "Chaos",
+    "posix_terminal_shell": "bash",
+    "show_terminal_tab": false,
+    "jobs_tab_visibility": "closed"
+}
