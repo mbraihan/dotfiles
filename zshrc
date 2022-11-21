@@ -133,39 +133,39 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 alias zconf="code ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias updatemac="softwareupdate -ia && mas upgrade && brew update && brew upgrade && brew cleanup"
+alias updatemac="softwareupdate -ia && brew update && brew upgrade && brew cleanup"
 alias gs="git status"
 alias ga="git add --all"
-# alias gai = add -i
+alias gai="git add -i"
+#############
+alias gap="git apply"
+alias gas="git apply --stat"
+alias gac="git apply --check"
 # #############
-# alias gap = apply
-# alias gas = apply --stat
-# alias gac = apply --check
+alias gama="git am --abort"
+alias gamr="git am --resolved"
+alias gams="git am --skip"
 # #############
-# alias gama = am --abort
-# alias gamr = am --resolved
-# alias gams = am --skip
+alias gb="git branch"
+alias gba="git branch -a"
+alias gbd="git branch -d"
+alias gbdd="git branch -D"
+alias gbr="git branch -r"
+alias gbc="git rev-parse --abbrev-ref HEAD"
+# alias gbu=!git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
+# alias gbs= !git-branch-status
+#############
+alias gc="git commit"
+alias gca="git commit -a"
+alias gcm="git commit -m"
+alias gcam="git commit -am"
+alias gcem="git commit --allow-empty -m"
+alias gcd="git commit --amend"
+alias gcad="git commit -a --amend"
+alias gced="git commit --allow-empty --amend"
 # #############
-# alias gb = branch
-# alias gba = branch -a
-# alias gbd = branch -d
-# alias gbdd = branch -D
-# alias gbr = branch -r
-# alias gbc = rev-parse --abbrev-ref HEAD
-# alias gbu = !git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
-# alias gbs = !git-branch-status
-# alias 	#############
-# alias gc = commit
-# alias gca = commit -a
-# alias gcm = commit -m
-# alias gcam = commit -am
-# alias gcem = commit --allow-empty -m
-# alias gcd = commit --amend
-# alias gcad = commit -a --amend
-# alias gced = commit --allow-empty --amend
-# #############
-# alias gcl = clone
-# alias gcld = clone --depth 1
+alias gcl="git clone"
+alias gcld="git clone --depth 1"
 # alias gclg = !sh -c 'git clone git://github.com/$1 $(basename $1)' -
 # alias gclgp = !sh -c 'git clone git@github.com:$1 $(basename $1)' -
 # alias gclgu = !sh -c 'git clone git@github.com:$(git config --get user.username)/$1 $1' -
