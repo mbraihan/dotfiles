@@ -207,17 +207,23 @@ alias gom="git checkout master"
 alias gob="git checkout -b"
 # alias gopr = !sh -c 'git fo pull/$1/head:pr-$1 && git o pr-$1'
 # #############
-# alias gpr = prune -v
+alias gpr="git prune -v"
 # #############
-# alias gps = push
-# alias gpsf = push -f
-# alias gpsu = push -u
-# alias gpst = push --tags
-# #############
-# alias gpso = push origin
-# alias gpsao = push --all origin
-# alias gpsfo = push -f origin
-# alias gpsuo = push -u origin
+alias gps="git push"
+alias gpsf="git push -f"
+alias gpsu="git push -u"
+alias gpst="git push --tags"
+#############
+alias gpso="git push origin"
+alias gpsao="git push --all origin"
+alias gpsfo="git push -f origin"
+alias gpsuo="git push -u origin"
+alias gpl="git pull"
+alias gplps="git pull && git push"
+alias gpb="git pull --rebase"
+alias gplo="git pull origin"
+alias gpbo="git pull --rebase origin"
+alias gplom="git pull origin master"
 #############
 # alias 	psom = push origin master
 # alias 	psaom = push --all origin master
@@ -229,12 +235,6 @@ alias gob="git checkout -b"
 # alias 	psuoc = !git push -u origin $(git bc)
 # alias 	psdc = !git push origin :$(git bc)
 # alias 	#############
-# alias 	pl = pull
-# alias 	pb = pull --rebase
-# alias 	#############
-# alias 	plo = pull origin
-# alias 	pbo = pull --rebase origin
-# alias 	plom = pull origin master
 # alias 	ploc = !git pull origin $(git bc)
 # alias 	pbom = pull --rebase origin master
 # alias 	pboc = !git pull --rebase origin $(git bc)
