@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -103,9 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -130,3 +128,208 @@ unset __conda_setup
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+# Example aliases
+alias zconf="code ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias updatemac="softwareupdate -ia && mas upgrade && brew update && brew upgrade && brew cleanup"
+alias gs="git status"
+alias ga="git add --all"
+# alias gai = add -i
+# #############
+# alias gap = apply
+# alias gas = apply --stat
+# alias gac = apply --check
+# #############
+# alias gama = am --abort
+# alias gamr = am --resolved
+# alias gams = am --skip
+# #############
+# alias gb = branch
+# alias gba = branch -a
+# alias gbd = branch -d
+# alias gbdd = branch -D
+# alias gbr = branch -r
+# alias gbc = rev-parse --abbrev-ref HEAD
+# alias gbu = !git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
+# alias gbs = !git-branch-status
+# alias 	#############
+# alias gc = commit
+# alias gca = commit -a
+# alias gcm = commit -m
+# alias gcam = commit -am
+# alias gcem = commit --allow-empty -m
+# alias gcd = commit --amend
+# alias gcad = commit -a --amend
+# alias gced = commit --allow-empty --amend
+# #############
+# alias gcl = clone
+# alias gcld = clone --depth 1
+# alias gclg = !sh -c 'git clone git://github.com/$1 $(basename $1)' -
+# alias gclgp = !sh -c 'git clone git@github.com:$1 $(basename $1)' -
+# alias gclgu = !sh -c 'git clone git@github.com:$(git config --get user.username)/$1 $1' -
+# #############
+# alias gcp = cherry-pick
+# alias gcpa = cherry-pick --abort
+# alias gcpc = cherry-pick --continue
+# #############
+# alias gd = diff
+# alias gdp = diff --patience
+# alias gdc = diff --cached
+# alias gdk = diff --check
+# alias gdck = diff --cached --check
+# alias gdt = difftool
+# alias gdct = difftool --cached
+# #############
+# alias gf = fetch
+# alias gfo = fetch origin
+# alias gfu = fetch upstream
+# #############
+# alias gfp = format-patch
+# #############
+# alias gfk = fsck
+# #############
+# alias gg = grep -p
+# #############
+# alias gl = log --oneline
+# alias glg = log --oneline --graph --decorate
+# #############
+# alias gls = ls-files
+# alias glsf = !git ls-files | grep -i
+# #############
+# alias gm = merge
+# alias gma = merge --abort
+# alias gmc = merge --continue
+# alias gms = merge --skip
+# #############
+# alias go = checkout
+# alias gom = checkout master
+# alias gob = checkout -b
+# alias gopr = !sh -c 'git fo pull/$1/head:pr-$1 && git o pr-$1'
+# #############
+# alias gpr = prune -v
+# #############
+# alias gps = push
+# alias gpsf = push -f
+# alias gpsu = push -u
+# alias gpst = push --tags
+# #############
+# alias gpso = push origin
+# alias gpsao = push --all origin
+# alias gpsfo = push -f origin
+# alias gpsuo = push -u origin
+#############
+# alias 	psom = push origin master
+# alias 	psaom = push --all origin master
+# alias 	psfom = push -f origin master
+# alias 	psuom = push -u origin master
+# alias 	psoc = !git push origin $(git bc)
+# alias 	psaoc = !git push --all origin $(git bc)
+# alias 	psfoc = !git push -f origin $(git bc)
+# alias 	psuoc = !git push -u origin $(git bc)
+# alias 	psdc = !git push origin :$(git bc)
+# alias 	#############
+# alias 	pl = pull
+# alias 	pb = pull --rebase
+# alias 	#############
+# alias 	plo = pull origin
+# alias 	pbo = pull --rebase origin
+# alias 	plom = pull origin master
+# alias 	ploc = !git pull origin $(git bc)
+# alias 	pbom = pull --rebase origin master
+# alias 	pboc = !git pull --rebase origin $(git bc)
+# alias 	#############
+# alias 	plu = pull upstream
+# alias 	plum = pull upstream master
+# alias 	pluc = !git pull upstream $(git bc)
+# alias 	pbum = pull --rebase upstream master
+# alias 	pbuc = !git pull --rebase upstream $(git bc)
+# alias 	#############
+# alias 	rb = rebase
+# alias 	rba = rebase --abort
+# alias 	rbc = rebase --continue
+# alias 	rbi = rebase --interactive
+# alias 	rbs = rebase --skip
+# alias 	#############
+# alias 	re = reset
+# alias 	rh = reset HEAD
+# alias 	reh = reset --hard
+# alias 	rem = reset --mixed
+# alias 	res = reset --soft
+# alias 	rehh = reset --hard HEAD
+# alias 	remh = reset --mixed HEAD
+# alias 	resh = reset --soft HEAD
+# alias 	rehom = reset --hard origin/master
+# alias 	#############
+# alias 	r = remote
+# alias 	ra = remote add
+# alias 	rr = remote rm
+# alias 	rv = remote -v
+# alias 	rn = remote rename
+# alias 	rp = remote prune
+# alias 	rs = remote show
+# alias 	rao = remote add origin
+# alias 	rau = remote add upstream
+# alias 	rro = remote remove origin
+# alias 	rru = remote remove upstream
+# alias 	rso = remote show origin
+# alias 	rsu = remote show upstream
+# alias 	rpo = remote prune origin
+# alias 	rpu = remote prune upstream
+# alias 	#############
+# alias 	rmf = rm -f
+# alias 	rmrf = rm -r -f
+# alias 	#############
+# alias 	s = status
+# alias 	sb = status -s -b
+# alias 	#############
+# alias 	sa = stash apply
+# alias 	sc = stash clear
+# alias 	sd = stash drop
+# alias 	sl = stash list
+# alias 	sp = stash pop
+# alias 	ss = stash save
+# alias 	ssk = stash save -k
+# alias 	sw = stash show
+# alias 	st = !git stash list | wc -l 2>/dev/null | grep -oEi '[0-9][0-9]*'
+# alias 	#############
+# alias 	t = tag
+# alias 	td = tag -d
+# alias 	#############
+# alias 	w = show
+# alias 	wp = show -p
+# alias 	wr = show -p --no-color
+# alias 	#############
+# alias 	svnr = svn rebase
+# alias 	svnd = svn dcommit
+# alias 	svnl = svn log --oneline --show-commit
+# alias 	#############
+# alias 	subadd = !sh -c 'git submodule add git://github.com/$1 $2/$(basename $1)' -
+# alias 	subrm = !sh -c 'git submodule deinit -f -- $1 && rm -rf .git/modules/$1 && git rm -f $1' -
+# alias 	subup = submodule update --init --recursive
+# alias 	subpull = !git submodule foreach git pull --tags -f origin master
+# alias 	#############
+# alias 	assume = update-index --assume-unchanged
+# alias 	unassume = update-index --no-assume-unchanged
+# alias 	assumed = !git ls -v | grep ^h | cut -c 3-
+# alias 	unassumeall = !git assumed | xargs git unassume
+# alias 	assumeall = !git status -s | awk {'print $2'} | xargs git assume
+# alias 	#############
+# alias 	bump = !sh -c 'git commit -am \"Version bump v$1\" && git psuoc && git release $1' -
+# alias 	release = !sh -c 'git tag v$1 && git pst' -
+# alias 	unrelease = !sh -c 'git tag -d v$1 && git pso :v$1' -
+# alias 	merged = !sh -c 'git o master && git plom && git bd $1 && git rpo' -
+# alias 	aliases = !git config -l | grep alias | cut -c 7-
+# alias 	snap = !git stash save 'snapshot: $(date)' && git stash apply 'stash@{0}'
+# alias 	bare = !sh -c 'git symbolic-ref HEAD refs/heads/$1 && git rm --cached -r . && git clean -xfd' -
+# alias 	whois = !sh -c 'git log -i -1 --author=\"$1\" --pretty=\"format:%an <%ae>\"' -
+# alias 	serve = daemon --reuseaddr --verbose --base-path=. --export-all ./.git
+# alias 	#############
+# alias 	behind = !git rev-list --left-only --count $(git bu)...HEAD
+# alias 	ahead = !git rev-list --right-only --count $(git bu)...HEAD
+# alias 	#############
+# alias 	ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+# alias 	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+# alias 	subrepo = !sh -c 'git filter-branch --prune-empty --subdirectory-filter $1 master' -
+# alias 	human = name-rev --name-only --refs=refs/heads/*
