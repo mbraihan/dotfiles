@@ -157,7 +157,6 @@ alias gbc="git rev-parse --abbrev-ref HEAD"
 #############
 alias gc="git commit"
 alias gca="git commit -a"
-alias gcm="git commit -m"
 alias gcam="git commit -am"
 alias gcem="git commit --allow-empty -m"
 alias gcd="git commit --amend"
@@ -170,42 +169,42 @@ alias gcld="git clone --depth 1"
 # alias gclgp = !sh -c 'git clone git@github.com:$1 $(basename $1)' -
 # alias gclgu = !sh -c 'git clone git@github.com:$(git config --get user.username)/$1 $1' -
 # #############
-# alias gcp = cherry-pick
-# alias gcpa = cherry-pick --abort
-# alias gcpc = cherry-pick --continue
+alias gcp="git cherry-pick"
+alias gcpa="git cherry-pick --abort"
+alias gcpc="git cherry-pick --continue"
 # #############
-# alias gd = diff
-# alias gdp = diff --patience
-# alias gdc = diff --cached
-# alias gdk = diff --check
-# alias gdck = diff --cached --check
-# alias gdt = difftool
-# alias gdct = difftool --cached
+alias gd="git diff"
+alias gdp="git diff --patience"
+alias gdc="git diff --cached"
+alias gdk="git diff --check"
+alias gdck="git diff --cached --check"
+alias gdt="git difftool"
+alias gdct="git difftool --cached"
 # #############
-# alias gf = fetch
-# alias gfo = fetch origin
-# alias gfu = fetch upstream
+alias gf="git fetch"
+alias gfo="git fetch origin"
+alias gfu="git fetch upstream"
 # #############
-# alias gfp = format-patch
+alias gfp="git format-patch"
 # #############
-# alias gfk = fsck
+alias gfk="git fsck"
 # #############
-# alias gg = grep -p
+alias gg="git grep -p"
 # #############
-# alias gl = log --oneline
-# alias glg = log --oneline --graph --decorate
+alias gl="git log --oneline"
+alias glg="git log --oneline --graph --decorate"
 # #############
 # alias gls = ls-files
 # alias glsf = !git ls-files | grep -i
 # #############
-# alias gm = merge
-# alias gma = merge --abort
-# alias gmc = merge --continue
-# alias gms = merge --skip
+alias gm="git merge"
+alias gma="git merge --abort"
+alias gmc="git merge --continue"
+alias gms="git merge --skip"
 # #############
-# alias go = checkout
-# alias gom = checkout master
-# alias gob = checkout -b
+alias go="git checkout"
+alias gom="git checkout master"
+alias gob="git checkout -b"
 # alias gopr = !sh -c 'git fo pull/$1/head:pr-$1 && git o pr-$1'
 # #############
 # alias gpr = prune -v
